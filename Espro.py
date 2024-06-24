@@ -166,7 +166,7 @@ async def vai(client: Client, message: Message):
            k = chatai.find_one({"word": message.text})      
            if k:               
                for x in is_chat:
-                   K.botend(x['text'])          
+                   K.append(x['text'])          
                hey = random.choice(K)
                is_text = chatai.find_one({"text": hey})
                Yo = is_text['check']
