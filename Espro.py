@@ -7,7 +7,7 @@ import random
 import os
 import re
 
-import app 
+import Espro 
 import asyncio
 import random
 from pyrogram import Client, filters
