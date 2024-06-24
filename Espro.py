@@ -255,7 +255,7 @@ async def vstickerai(client: Client, message: Message):
                k = chatai.find_one({"word": message.text})      
                if k:           
                    for x in is_chat:
-                       K.botend(x['text'])
+                       K.append(x['text'])
                    hey = random.choice(K)
                    is_text = chatai.find_one({"text": hey})
                    Yo = is_text['check']
@@ -292,7 +292,7 @@ async def vprivate(client: Client, message: Message):
        K = []  
        is_chat = chatai.find({"word": message.text})                 
        for x in is_chat:
-           K.botend(x['text'])
+           K.append(x['text'])
        hey = random.choice(K)
        is_text = chatai.find_one({"text": hey})
        Yo = is_text['check']
@@ -335,7 +335,7 @@ async def vprivatesticker(client: Client, message: Message):
        K = []  
        is_chat = chatai.find({"word": message.sticker.file_unique_id})                 
        for x in is_chat:
-           K.botend(x['text'])
+           K.append(x['text'])
        hey = random.choice(K)
        is_text = chatai.find_one({"text": hey})
        Yo = is_text['check']
@@ -351,7 +351,7 @@ async def vprivatesticker(client: Client, message: Message):
            K = []  
            is_chat = chatai.find({"word": message.sticker.file_unique_id})                 
            for x in is_chat:
-               K.botend(x['text'])
+               K.append(x['text'])
            hey = random.choice(K)
            is_text = chatai.find_one({"text": hey})
            Yo = is_text['check']
