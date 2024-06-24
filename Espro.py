@@ -83,9 +83,7 @@ async def start(client: Client, message: Message):
 
 
 
-@bot.on_message(
-    filters.command("chatbot off", prefixes=["/", ".", "?", "-"])
-    & ~filters.private)
+@bot.on_message(filters.command("chatbot off") & ~filters.private)
 async def chatbotofd(client, message):
     vdb = MongoClient(MONGO_URL)    
     v = vdb["vDb"]["v"]     
@@ -106,9 +104,7 @@ async def chatbotofd(client, message):
         await message.reply_text(f"🌷𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐈𝐬 𝐀𝐥𝐫𝐞𝐚𝐝𝐭 𝐃𝐢𝐬𝐚𝐛𝐥𝐞𝐝 🥀!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) 🌷")
     
 
-@bot.on_message(
-    filters.command("chatbot on", prefixes=["/", ".", "?", "-"])
-    & ~filters.private)
+@bot.on_message(filters.command("chatbot on") & ~filters.private)
 async def chatboton(client, message):
     vdb = MongoClient(MONGO_URL)    
     v = vdb["vDb"]["v"]     
@@ -129,9 +125,7 @@ async def chatboton(client, message):
         await message.reply_text(f"💥 𝐂𝐡𝐚𝐭𝐛𝐨𝐭 𝐈𝐬 𝐄𝐧𝐚𝐛𝐥𝐞𝐝 🌷!\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) 🌷")
     
 
-@bot.on_message(
-    filters.command("chatbot", prefixes=["/", ".", "?", "-"])
-    & ~filters.private)
+@bot.on_message(filters.command("chatbot") & ~filters.group)
 async def chatbot(client, message):
     await message.reply_text(f"**🇮🇳 𝐔𝐬𝐚𝐠𝐞 🌷 :**\n/chatbot [on|off] 𝐎𝐧𝐥𝐲 𝐆𝐫𝐨𝐮𝐩 🇮🇳 !\n\n𝐀𝐧𝐲 𝐏𝐫𝐨𝐛𝐥𝐞𝐦 𝐓𝐨 [𝐑𝐞𝐩𝐨𝐫𝐭](https://t.me/{SUPPORT_GROUP})  🥀\n\n[𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/{UPDATES_CHANNEL}) 🌷")
 
