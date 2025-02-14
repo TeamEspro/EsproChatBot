@@ -1,31 +1,63 @@
 {
-    "name": "Espro", 
+    "name": "BikashRobot", 
     "description": "A Telegram Best Artificial Intelligence Chat Bot , written in Python with Pyrogram",
-    "logo": "https://telegra.ph/file/f6ac220c372cb7ee1162a.jpg",
+    "logo": "https://te.legra.ph/file/f73af9a4ffe130a83d8d2.jpg",
     "stack": "container",
     "env": {
-        "MONGO_URI": {
+        "BOT_TOKEN": {
             "description": "Input Bot token here",
             "required": true
         },
-        "OPENAI_API_KEY": {
+        "OWNER_USERNAME": {
             "description": "Input Owner Username here ( Without @)",
             "required": true
         },
-
-        "TELEGRAM_BOT_TOKEN": {
-            "description": "Input Owner Username here ( Without @)",
+        "SUPPORT_GROUP": {
+            "description": "Input support group username here ( Without @)",
+            "required": true
+        },
+        "UPDATES_CHANNEL": {
+            "description": "Input updates channel username here ( Without @) ",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "Input Bot USERNAME here ( Without @)",
+            "required": true
+        },  
+        "BOT_IMAGE": {
+            "description": "Input Bot start pic link here",
+            "required": true
+        },       
+        "MONGO_URL": {
+            "description": "Input mongo db url here",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Input api id here",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Input api hash here",
             "required": true
         }
     },
     "buildpacks": [
         {
             "url": "heroku/python"
+        },
+        {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
         }
     ],
     "addons": [
         {
             "plan": "heroku-postgresql"
         }
-    ]
+    ],
+    "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "eco"
+          }
+    }
 }
