@@ -1,8 +1,4 @@
-pyrogram==2.0.106
-pymongo
-motor
-requests
-dnspython
-tgcrypto==1.2.2
-asyncio
-python-dotenv
+python-telegram-bot==20.7
+openai==1.2.0
+pymongo[srv]==4.5.0
+python-dotenv==1.0.0
