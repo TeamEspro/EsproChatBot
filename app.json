@@ -4,11 +4,16 @@
     "logo": "https://telegra.ph/file/f6ac220c372cb7ee1162a.jpg",
     "stack": "container",
     "env": {
-        "BOT_TOKEN": {
+        "MONGO_URI": {
             "description": "Input Bot token here",
             "required": true
         },
-        "OWNER_USERNAME": {
+        "OPENAI_API_KEY": {
+            "description": "Input Owner Username here ( Without @)",
+            "required": true
+        },
+
+        "TELEGRAM_BOT_TOKEN": {
             "description": "Input Owner Username here ( Without @)",
             "required": true
         },
