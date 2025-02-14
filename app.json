@@ -16,7 +16,7 @@
         "TELEGRAM_BOT_TOKEN": {
             "description": "Input Owner Username here ( Without @)",
             "required": true
-        },
+        }
     },
     "buildpacks": [
         {
