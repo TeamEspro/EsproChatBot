@@ -49,7 +49,7 @@ Hɪ I'ᴍ A Aᴅᴠᴀɴᴄᴇ Cʜᴀᴛ Bᴏᴛ.\n\n Nᴀᴍᴇ Is V Cʜᴀᴛ 
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ❱ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "✚ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ✚", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ]
                 
            ]
@@ -68,9 +68,10 @@ Hɪ I'ᴍ A Aᴅᴠᴀɴᴄᴇ Cʜᴀᴛ Bᴏᴛ.\n\n Nᴀᴍᴇ Is V Cʜᴀᴛ 
             [
                 [
                     InlineKeyboardButton(
-                        " 💥 𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐂𝐡𝐚𝐭 𝐆𝐫𝐨𝐮𝐩 💞", url=f"https://t.me/bgt_chat")
+                        "✚ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ✚", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ]
-            ]
+                
+           ]
         ),
     )
 
