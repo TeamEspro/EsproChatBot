@@ -41,7 +41,7 @@ async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{BOT_IMAGE}",
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-Hɪ I'ᴍ A Aᴅᴠᴀɴᴄᴇ Cʜᴀᴛ Bᴏᴛ.\n\n Nᴀᴍᴇ Is V Cʜᴀᴛ Bᴏᴛ Fᴏʀᴍ Iɴᴅɪᴀ \n\n ✔ I'ᴍ A Aʀᴛɪғɪᴄɪᴀʟ Iɴᴛᴇʟʟɪɢᴇɴᴄᴇ\n\n/ᴄʜᴀᴛʙᴏᴛ - [ᴏɴ/ᴏғғ] Tʜɪs Cᴏᴍᴍᴀɴᴅ Usᴇ Oɴʟʏ Aɴʏ Gʀᴏᴜᴘ
+Hɪ I'ᴍ A Aᴅᴠᴀɴᴄᴇ 𝐇ocαηє [•ᴧғᴋ•].\n\n Nᴀᴍᴇ Is 𝐇ocαηє [•ᴧғᴋ•] Fᴏʀᴍ Iɴᴅɪᴀ \n\n ✔ I'ᴍ A Aʀᴛɪғɪᴄɪᴀʟ Iɴᴛᴇʟʟɪɢᴇɴᴄᴇ\n\n/ᴄʜᴀᴛʙᴏᴛ - [ᴏɴ/ᴏғғ] Tʜɪs Cᴏᴍᴍᴀɴᴅ Usᴇ Oɴʟʏ Aɴʏ Gʀᴏᴜᴘ
 
 💕Jᴜsᴛ Aᴅᴅ Mᴇ » Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ 
 EɴJᴏʏ Sᴜᴘᴇʀ Qᴜᴀʟɪᴛʏ Cʜᴀᴛ
@@ -58,24 +58,6 @@ EɴJᴏʏ Sᴜᴘᴇʀ Qᴜᴀʟɪᴛʏ Cʜᴀᴛ
     )
     
     
-@bot.on_message(filters.command(["/start", f"start@{BOT_USERNAME}", "/alive", ".alive", "#bikash", "#aditya"]) & filters.group)
-async def start(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"{BOT_IMAGE}",
-        caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-Hɪ I'ᴍ A Aᴅᴠᴀɴᴄᴇ Cʜᴀᴛ Bᴏᴛ.\n\n Nᴀᴍᴇ Is V Cʜᴀᴛ Bᴏᴛ Fᴏʀᴍ Iɴᴅɪᴀ \n\n ✔ I'ᴍ A Aʀᴛɪғɪᴄɪᴀʟ Iɴᴛᴇʟʟɪɢᴇɴᴄᴇ\n\n/ᴄʜᴀᴛʙᴏᴛ - [ᴏɴ/ᴏғғ] Tʜɪs Cᴏᴍᴍᴀɴᴅ Usᴇ Oɴʟʏ Aɴʏ Gʀᴏᴜᴘ
-━━━━━━━━━━━━━━━━━━━━━━━━**""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "✚ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ✚", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
-                ]
-                
-           ]
-        ),
-    )
-
 
 
 @bot.on_message(
