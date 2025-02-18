@@ -1,6 +1,7 @@
 
 import os
 import logging
+from EsproMusic import app
 from pyrogram import Client, filters
 from pyrogram.types import ChatMemberUpdated
 from PIL import Image, ImageDraw, ImageFont, ImageChops
