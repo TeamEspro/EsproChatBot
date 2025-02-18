@@ -10,9 +10,6 @@ logging.basicConfig(level=logging.INFO)
 LOGGER = logging.getLogger(__name__)
 
 # Bot Token and API Credentials (Replace with your own)
-API_ID = "YOUR_API_ID"
-API_HASH = "YOUR_API_HASH"
-BOT_TOKEN = "YOUR_BOT_TOKEN"
 
 # Paths to Assets
 DEFAULT_BG = "assets/welcome_bg.png"  # Custom background image
