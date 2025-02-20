@@ -1,3 +1,11 @@
+import re
+from os import getenv
+
+from dotenv import load_dotenv
+from pyrogram import filters
+
+load_dotenv()
+
 API_ID = os.environ.get("API_ID", "none") 
 API_HASH = os.environ.get("API_HASH", "none") 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "none") 
